@@ -1,0 +1,89 @@
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="accent" (click)="closeProduct()" mat-dialog-close>Close</button>
+</mat-dialog-actions>
+<br>
+<mat-dialog-content>
+  <mat-grid-list cols="3" rowHeight="500px">
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{product.name}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div style="height:100%; width:100%">
+            <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+              <mdb-carousel-item>
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+                </video>
+              </mdb-carousel-item>
+              <mdb-carousel-item>
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+                </video>
+              </mdb-carousel-item>
+              <mdb-carousel-item>
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+                </video>
+              </mdb-carousel-item>
+            </mdb-carousel>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            More Information
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div class="tripInfo">Continent: {{product.category}}</div>
+          <div class="tripInfo">Count: {{product.count}}</div>
+          <div class="tripInfo">Already Reserved: {{product.reserved}}</div>
+          <div class="tripInfo">Price: {{product.price | currency: 'EUR'}}</div>
+          <div class="tripInfo">Start Date: {{product.startDate}}</div>
+          <div class="tripInfo">End Date: {{product.endDate}}</div>
+          <br>
+          <div class="tripInfo">Average rating: {{this.avgRating}}</div>
+          <div class="comment">
+            <h6 *ngIf="this.orderPlaced">Add your opinion:</h6>
+            <h6 *ngIf="!this.orderPlaced">Order first to add your opinion:</h6>
+            <div class="form-group">
+              <textarea class="form-control" id="opinionTextArea" rows="4"
+                [attr.disabled]="this.orderPlaced ? null : true">
+                        </textarea>
+            </div>
+            <button mat-raised-button color="accent" type="submit" [disabled]="!this.orderPlaced" (click)="submitOpinion()">Submit your
+              opinion</button>
+          </div>
+          <hr>
+          <div class="center">
+            <p class="tripInfo">Add To Cart:</p>
+            <button mat-raised-button class="productButton" color="basic" [disabled]="!isCanAdd"
+              (click)="addOneProduct()">+</button>
+            <button mat-raised-button class="productButton" color="accent" [disabled]="!isCanRemove"
+              (click)="removeOneProduct()">-</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Description
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <h1>{{product.name}}</h1>
+          <h4 class="mat-typography">{{product.description}}</h4>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-dialog-content>

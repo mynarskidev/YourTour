@@ -1,0 +1,17 @@
+.container {
+  margin-top: 1rem;
+  margin-bottom: 30rem;
+}
+
+.edit-trip {
+  margin-top: 7rem;
+  padding: 3rem;
+}
+
+.center{
+  text-align: center;
+}
+
+.right{
+  float: right;
+}

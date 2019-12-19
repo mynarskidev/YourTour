@@ -1,0 +1,58 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <mat-toolbar>Menu</mat-toolbar>
+    <button class="menuButton" mat-raised-button color="accent" (click)="backToHomePage()">Back To Home Page</button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <h1 class="mat-h1">Orders</h1>
+    <div class="message" *ngIf="this.filteredOrders.length == 0">
+      <h1>You do not have any orders :(</h1>
+    </div>
+    <div *ngIf="this.filteredOrders.length > 0">
+      <h2 class="message">Yours Orders:</h2>
+      <div *ngFor="let item of this.filteredOrders" class="order-summary shadow">
+        <h5>Order made on date: {{item.orderDate | date}}</h5>
+        <div class="mt-3 koszyk">
+          <table id="cart" class="table table-hover table-condensed">
+            <thead>
+              <tr>
+                <th style="width:50%">Name</th>
+                <th style="width:10%">Price for one</th>
+                <th style="width:8%">Reserved</th>
+                <th style="width:22%" class="text-center">Amount</th>
+                <th style="width:10%"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let trip of item.trips">
+                <td data-th="Trip">
+                  <div class="row">
+                    <div class="col-2 hidden-sm">
+                      <img src="{{trip.imageUrl}}" alt="..." class="img-responsive center" width="40" />
+                    </div>
+                    <div class="col-10">
+                      <h4 class="nomargin">{{trip.name}}</h4>
+                      <p>{{trip.description}}</p>
+                    </div>
+                  </div>
+                </td>
+                <td data-th="Price">{{trip.price | currency: 'EUR'}}</td>
+                <td data-th="Quantity">
+                  {{trip.reserved}}
+                </td>
+                <td data-th="Subtotal" class="text-center">{{trip.price * trip.reserved | currency: 'EUR'}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="hidden-xs text-center"><strong>Total price:
+                    {{this.getTotal(item.trips) | currency: 'EUR'}}</strong>
+                </td>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

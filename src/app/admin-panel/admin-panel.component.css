@@ -1,0 +1,82 @@
+.color-pink {
+  color: #FF4081;
+}
+
+.deleteBtn {
+  cursor: pointer;
+  padding: auto;
+}
+
+.updateBtn {
+  cursor: pointer;
+  padding: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.admin-panel {
+  margin-top: 2rem;
+}
+
+.alignCenter {
+  display: block;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: absolute;
+  top: 0;
+  z-index: 14;
+}
+
+.mat-sidenav-content {
+  padding-top: 5px;
+}
+
+.example-container {
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.example-is-mobile .example-toolbar {
+  position: absolute;
+  height: 100vh;
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  flex: 1 0 auto;
+}
+
+.menuButton {
+  width: 80%;
+  margin: 15px;
+}

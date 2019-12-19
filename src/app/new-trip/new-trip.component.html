@@ -1,0 +1,18 @@
+<div class="new-trip">
+    <h3 class="center">New trip panel:</h3>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="form-group">
+            <button type="submit" mat-raised-button color="accent" placement="right" trigger="click"
+                class="right">Add</button>
+            <br />
+            <label>Name:</label><input name="name" formControlName="name" class="form-control">
+            <label>Continent:</label><input name="continent" formControlName="category" class="form-control">
+            <label>Start Date:</label><input name="startDate" formControlName="startDate" class="form-control">
+            <label>End Date:</label><input name="endDate" formControlName="endDate" class="form-control">
+            <label>Price:</label><input name="price" formControlName="price" class="form-control">
+            <label>Count:</label><input name="count" formControlName="count" class="form-control">
+            <label>Description:</label><input name="description" formControlName="description" class="form-control">
+            <label>Image Url:</label><input name="imageUrl" formControlName="imageUrl" class="form-control">
+        </div>
+    </form>
+</div>

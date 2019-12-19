@@ -1,0 +1,35 @@
+<mat-card class="dashboard-card" (click)="openProductDetail($event)" [ngClass]="{
+  'low-available-places': product.count<= 3,
+  'cheapest': product.price===minElement,
+  'most-expensive': product.price===maxElement
+}">
+    <mat-card-header>
+      <mat-card-title>
+        <h3>{{product.name | uppercase}}</h3>
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{product.imageUrl}}" alt="">
+    <mat-card-content class="dashboard-card-content">
+      <p>
+        {{product.description.slice(0, 20)}}
+      </p>
+      <h4>Price: {{product.price | currency: 'EUR'}}</h4>
+      <h6>Count: {{product.count}}</h6>
+      <div *ngIf="product.count == 0">
+        <h6>No places available :(</h6>
+      </div>
+      <hr>
+      <h6>Average rating: {{this.avgRating}} </h6>
+      <app-rating [readonly]="!this.orderPlaced || this.alreadyRated" [avgRating]='avgRating'
+        (ratingAdded)="addRating($event)"></app-rating>
+      <hr>
+      <h6 *ngIf="!this.orderPlaced">Rate only if ordered</h6>
+      <h6 *ngIf="this.alreadyRated">You have already rated</h6>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="centerText">
+        <button mat-raised-button color="basic" [disabled]="!isCanAdd" (click)="addOneProduct($event)">+</button>
+        <button mat-raised-button color="accent" [disabled]="!isCanRemove" (click)="removeOneProduct($event)">-</button>
+      </div>
+    </mat-card-actions>
+</mat-card>

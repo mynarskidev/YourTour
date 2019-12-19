@@ -1,0 +1,272 @@
+{
+  "orders" : {
+    "-LwEqjTO4j7LHPCYrjcD" : {
+      "id" : "-LwEqjTO4j7LHPCYrjcD",
+      "orderDate" : "2019-12-16T17:56:46.408Z",
+      "owner" : "test@o2.pl",
+      "trips" : [ {
+        "category" : "Africa",
+        "count" : 13,
+        "reserved": 1,
+        "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+        "endDate" : "23/12/2020",
+        "id" : "-LvrBJ5I4SLOoMwp76sv",
+        "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+        "name" : "Egypt",
+        "price" : 1400,
+        "ratings" : [ {
+          "ratedBy" : "admin@o2.pl",
+          "rating" : 4
+        }, {
+          "ratedBy" : "admin@o2.pl",
+          "rating" : 5
+        }],
+        "startDate" : "14/12/2020"
+      } ]
+    }
+  },
+  "roles" : {
+    "-Lvhy7UshNgP1JCjrgNT" : {
+      "email" : "admin@o2.pl",
+      "role" : "admin"
+    },
+    "-Lvqij76TYcZSKz1Mdwu" : {
+      "email" : "test@o2.pl",
+      "role" : "admin"
+    },
+    "-LvrBJ5I4S7TdMwp76sv" : {
+      "email" : "testowanie@o2.pl",
+      "role" : "user"
+    }
+  },
+  "trips" : {
+    "-LvqijLYTr9ZSKz1Mdwu" : {
+      "category" : "Europe",
+      "count" : 18,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "14/12/2020",
+      "id" : "-LvqijLYTr9ZSKz1Mdwu",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+      "name" : "France",
+      "price" : 800,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }],
+      "startDate" : "9/12/2020"
+    },
+    "-LvrBIUshNgP1JCjrgNT" : {
+      "category" : "Asia",
+      "count" : 14,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "14/12/2020",
+      "id" : "-LvrBIUshNgP1JCjrgNT",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+      "name" : "China",
+      "price" : 1300,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "2/12/2020"
+    },
+    "-LvrBJ5I4SLOoMwp76sv" : {
+      "category" : "Africa",
+      "count" : 13,
+      "reserved": 1,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "23/12/2020",
+      "id" : "-LvrBJ5I4SLOoMwp76sv",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+      "name" : "Egypt",
+      "price" : 1400,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 4
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "14/12/2020"
+    },
+    "-LvrBJc4vPdLm1YZux5p" : {
+      "category" : "Americas",
+      "count" : 24,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "31/12/2020",
+      "id" : "-LvrBJc4vPdLm1YZux5p",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg",
+      "name" : "Canada",
+      "price" : 2300,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "23/12/2020"
+    },
+    "-LvrBKH80610d925YHBn" : {
+      "category" : "Europe",
+      "count" : 12,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "16/12/2020",
+      "id" : "-LvrBKH80610d925YHBn",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+      "name" : "Germany",
+      "price" : 2500,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 3
+      }],
+      "startDate" : "10/12/2020"
+    },
+    "-LvrBKnvEOZ8NdQimjf7" : {
+      "category" : "Asia",
+      "count" : 11,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "21/12/2020",
+      "id" : "-LvrBKnvEOZ8NdQimjf7",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+      "name" : "India",
+      "price" : 2700,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }],
+      "startDate" : "12/12/2020"
+    },
+    "-LvrBLT-6eDCvITLYNeH" : {
+      "category" : "Africa",
+      "count" : 23,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "16/12/2020",
+      "id" : "-LvrBLT-6eDCvITLYNeH",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+      "name" : "RPA",
+      "price" : 2800,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "10/12/2020"
+    },
+    "-LvrBM12HxM_22dbiLL8" : {
+      "category" : "Americas",
+      "count" : 21,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "30/12/2020",
+      "id" : "-LvrBM12HxM_22dbiLL8",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+      "name" : "USA",
+      "price" : 3100,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 4
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "12/12/2020"
+    },
+    "-LvrBQKumwqSJYhd4SJ_" : {
+      "category" : "Europe",
+      "count" : 36,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "24/12/2020",
+      "id" : "-LvrBQKumwqSJYhd4SJ_",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
+      "name" : "Spain",
+      "price" :3250,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "10/12/2020"
+    },
+    "-LvrBQZBBy6W6he4Fh51" : {
+      "category" : "Asia",
+      "count" : 18,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "29/12/2020",
+      "id" : "-LvrBQZBBy6W6he4Fh51",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
+      "name" : "Japan",
+      "price" : 3700,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 1
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 5
+      }],
+      "startDate" : "21/12/2020"
+    },
+    "-LvrBQlzEm5R5RTtQtmf" : {
+      "category" : "Africa",
+      "count" : 15,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "31/12/2020",
+      "id" : "-LvrBQlzEm5R5RTtQtmf",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg",
+      "name" : "Kongo",
+      "price" : 3800,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 4
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 2
+      }],
+      "startDate" : "12/12/2020"
+    },
+    "-LvrBQzTssYvBvu_e2QV" : {
+      "category" : "Americas",
+      "count" : 24,
+      "reserved": 0,
+      "description" : "Fast and cheap \n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida consectetur nisi, id imperdiet dolor pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at lorem at risus efficitur sodales eget ut velit. Donec nisl leo, molestie a sem ac, lacinia laoreet diam. Etiam cursus lacus id lorem dignissim egestas. Cras varius eros interdum interdum malesuada. Vivamus ut luctus nisi. Nullam pulvinar tellus arcu, eget malesuada nisl congue ut. Donec a urna id dui vulputate maximus quis vitae neque. Integer sagittis nunc in libero laoreet pellentesque. Vestibulum sit amet sem non risus ultrices auctor fermentum non nibh. Phasellus ac tempor quam, ut congue odio. Nullam ex dolor, porttitor non arcu id, laoreet congue nunc. Maecenas lectus ligula, tempor et arcu sed, consectetur placerat nibh. Duis scelerisque massa at mauris lobortis, ac ullamcorper ligula scelerisque.",
+      "endDate" : "24/12/2020",
+      "id" : "-LvrBQzTssYvBvu_e2QV",
+      "imageUrl" : "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
+      "name" : "Brazil",
+      "price" : 4100,
+      "ratings" : [ {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 4
+      }, {
+        "ratedBy" : "admin@o2.pl",
+        "rating" : 4
+      }],
+      "startDate" : "12/12/2020"
+    }
+  }
+}

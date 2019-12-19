@@ -1,0 +1,9 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <app-filters></app-filters>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-products></app-products>
+  </mat-sidenav-content>
+</mat-sidenav-container>

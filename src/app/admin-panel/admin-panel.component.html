@@ -1,0 +1,58 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <mat-toolbar>Menu</mat-toolbar>
+    <button class="menuButton" mat-raised-button color="accent" routerLink="/home">Back To Home
+      Page</button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="admin-panel">
+      <h1 class="center">Admin panel</h1>
+      <div class="container-fluid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Trip Name</th>
+              <th scope="col">Continent</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col">Price</th>
+              <th scope="col">Count</th>
+              <th scope="col">Already reserved</th>
+              <th scope="col">Description</th>
+              <th scope="col">Delete</th>
+              <th scope="col">Update</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let trip of this.trips">
+              <th scope="row">{{ trip.id }}</th>
+              <td>
+                {{ trip.name }}
+              </td>
+              <td>{{trip.category}}</td>
+              <td>{{trip.startDate}}</td>
+              <td>{{trip.endDate}}</td>
+              <td>€{{trip.price}}</td>
+              <td>{{trip.count}}</td>
+              <td>{{trip.reserved}}</td>
+              <td>{{trip.description}}</td>
+              <td>
+                <div class="alignCenter"><i (click)="this.removeTrip(trip)"
+                    class="fas color-pink fa-trash-alt text-basic mb-2 fa-2x deleteBtn"></i></div>
+              </td>
+              <td>
+                <div class="alignCenter"><i [routerLink]="['/edit-trip', trip.id]"
+                    class="color-pink mb-2 fa fa-2x fa-edit updateBtn"></i></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container">
+        <app-new-trip></app-new-trip>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

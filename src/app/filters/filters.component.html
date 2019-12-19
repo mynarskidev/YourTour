@@ -1,0 +1,27 @@
+<mat-nav-list>
+    <mat-toolbar>Apply ranges</mat-toolbar>
+    <div class="rangeSector" *ngIf="countRange != null">
+        <h5 class="card-title">Number Of Places</h5>
+        <ng5-slider class="sliderRange" [(value)]="countRange.minValue" [(highValue)]="countRange.maxValue"
+            [options]="optionsCount"></ng5-slider>
+    </div>
+    <div class="rangeSector" *ngIf="priceRange != null">
+        <h5 class="card-title">Price</h5>
+        <div class="custom-slider">
+            <ng5-slider class="sliderRange" [(value)]="priceRange.minValue" [(highValue)]="priceRange.maxValue"
+                [options]="optionsPrice"></ng5-slider>
+        </div>
+    </div>
+    <div class="rangeSector" *ngIf="ratingRange != null">
+        <h5 class="card-title">Rating</h5>
+        <div class="custom-slider">
+            <ng5-slider class="sliderRange" [(value)]="ratingRange.minValue" [(highValue)]="ratingRange.maxValue"
+                [options]="optionsRating"></ng5-slider>
+        </div>
+    </div>
+    <mat-toolbar>Continents</mat-toolbar>
+    <div *ngFor="let category of categoriesArray">
+        <mat-slide-toggle class="menuButton" [checked]="categories.get(category)" (change)="togleCategory(category)">
+            {{category}}</mat-slide-toggle>
+    </div>
+</mat-nav-list>
