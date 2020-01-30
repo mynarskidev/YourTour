@@ -1,49 +1,53 @@
-import { AuthService } from './../../services/auth.service';
-import { Component, OnInit, Input } from '@angular/core';
-import { Product } from '../../models/product.model';
-import { BasketService } from 'src/services/basketService';
-import { MatDialog } from '@angular/material';
-import { ProductDetailComponent } from '../product-detail/product-detail.component';
-import { ProductsService } from 'src/services/product.service';
+import { AuthService } from "./../../services/auth.service";
+import { Component, OnInit, Input } from "@angular/core";
+import { Product } from "../../models/product.model";
+import { BasketService } from "src/services/basketService";
+import { MatDialog } from "@angular/material";
+import { ProductDetailComponent } from "../product-detail/product-detail.component";
+import { ProductsService } from "src/services/product.service";
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  selector: "app-product",
+  templateUrl: "./product.component.html",
+  styleUrls: ["./product.component.css"]
 })
-
 export class ProductComponent implements OnInit {
   basketProducts: Array<Product>;
   @Input() product: Product;
   @Input() isCheapest: boolean;
   @Input() isMostExpensive: boolean;
-  isCanAdd: boolean = false
-  isCanRemove: boolean = false
-  orderPlaced: boolean
+  isCanAdd: boolean = false;
+  isCanRemove: boolean = false;
+  orderPlaced: boolean;
   alreadyRated: boolean = false;
   minElement: any;
   maxElement: any;
   avgRating: any;
   orders = [];
-  constructor(public dialog: MatDialog,
+  constructor(
+    public dialog: MatDialog,
     private productsService: ProductsService,
     private basketService: BasketService,
-    private authService: AuthService,
-  ) { }
+    private authService: AuthService
+  ) {}
 
   ngOnInit() {
-    this.productsService.fetchOrders().subscribe((orders) => {
+    this.productsService.fetchOrders().subscribe(orders => {
       this.orders = orders;
       this.canRate();
     });
-    this.isCanAdd = this.product.count > 0
-    this.basketService.getbasketProductsObservable().subscribe(basketProducts => {
-      this.basketProducts = basketProducts;
-      this.isCanRemove = this.basketService.countOfProduct(this.product) > 0;
-      this.isCanAdd = this.product.count > 0;
-    })
+    this.isCanAdd = this.product.count > 0;
+    this.basketService
+      .getbasketProductsObservable()
+      .subscribe(basketProducts => {
+        this.basketProducts = basketProducts;
+        this.isCanRemove = this.basketService.countOfProduct(this.product) > 0;
+        this.isCanAdd = this.product.count > 0;
+      });
     this.productsService.getAllProductsObservable().subscribe(products => {
-      let myProduct = products.find(element => { return element.id == this.product.id })
+      let myProduct = products.find(element => {
+        return element.id == this.product.id;
+      });
       if (myProduct != null) {
         this.product = myProduct;
       }
@@ -77,27 +81,30 @@ export class ProductComponent implements OnInit {
 
   canRate() {
     const filteredOrders = this.orders.filter((order: any) => {
-      const tripsIds = order.trips.map(product => product['id']);
-      return ("owner" in order) && (order.owner == this.authService.getUser()) && (tripsIds.includes(this.product.id));
+      const tripsIds = order.trips.map(product => product["id"]);
+      return (
+        "owner" in order &&
+        order.owner == this.authService.getUser() &&
+        tripsIds.includes(this.product.id)
+      );
     });
     this.orderPlaced = filteredOrders.length > 0;
   }
 
   didRateBefore() {
-    const ratedBy = this.product.ratings.map(product => product['ratedBy']);
+    const ratedBy = this.product.ratings.map(product => product["ratedBy"]);
     return ratedBy.includes(this.authService.getUser());
   }
 
   openProductDetail(event) {
-    const dialogRef = this.dialog.open(ProductDetailComponent,
-      {
-        width: '82vw',
-        height: '85vh',
-        data: this.product
-      });
+    const dialogRef = this.dialog.open(ProductDetailComponent, {
+      width: "82vw",
+      height: "85vh",
+      data: this.product
+    });
 
     dialogRef.afterClosed().subscribe(result => {
-      return null
+      return null;
     });
   }
 
@@ -108,15 +115,15 @@ export class ProductComponent implements OnInit {
   }
 
   countAvgRating() {
-    const ratingArray = this.product.ratings
+    const ratingArray = this.product.ratings;
     if (ratingArray) {
       let sum = 0;
       let i = 0;
       ratingArray.forEach((element, index, array) => {
-        sum += element['rating'];
-        i++
+        sum += element["rating"];
+        i++;
       });
-      return Math.round(sum / i * 100) / 100;
-    } else return 'No Ratings Yet'
+      return Math.round((sum / i) * 100) / 100;
+    } else return "No Ratings Yet";
   }
 }
