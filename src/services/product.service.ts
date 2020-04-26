@@ -59,10 +59,10 @@ export class ProductsService {
             }
             this.sortFilterProducts();
         });
-        this.allCategories.set('Europe', true);
-        this.allCategories.set('Asia', true);
-        this.allCategories.set('Africa', true);
-        this.allCategories.set('Americas', true);
+        this.allCategories.set('Concert', true);
+        this.allCategories.set('Sport', true);
+        this.allCategories.set('Board games', true);
+        this.allCategories.set('Other', true);
     }
 
     getAllCategories(): BehaviorSubject<Map<String, boolean>> {

@@ -19,7 +19,7 @@
                 [options]="optionsRating"></ng5-slider>
         </div>
     </div>
-    <mat-toolbar>Continents</mat-toolbar>
+    <mat-toolbar>Type</mat-toolbar>
     <div *ngFor="let category of categoriesArray">
         <mat-slide-toggle class="menuButton" [checked]="categories.get(category)" (change)="togleCategory(category)">
             {{category}}</mat-slide-toggle>
