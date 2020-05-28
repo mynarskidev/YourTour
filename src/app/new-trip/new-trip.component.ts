@@ -15,14 +15,14 @@ export class NewTripComponent implements OnInit {
 
   ngOnInit(): void {
     this.myForm = new FormGroup({
-      name: new FormControl('Uganda'),
-      description: new FormControl('Fast and cheap'),
-      startDate: new FormControl('2020-01-04'),
-      endDate: new FormControl('2020-01-13'),
-      category: new FormControl('Africa'),
+      name: new FormControl('Event 1'),
+      description: new FormControl('Concert'),
+      startDate: new FormControl('2020-05-04'),
+      endDate: new FormControl('2020-07-13'),
+      category: new FormControl('Concert'),
       count: new FormControl(14),
       price: new FormControl(3400),
-      imageUrl: new FormControl('https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg')
+      imageUrl: new FormControl('https://ss')
     });
   }
 
